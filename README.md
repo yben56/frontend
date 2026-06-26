@@ -1,5 +1,109 @@
-# Vue 3 + TypeScript + Vite
+# Frontend Test Project (Vue 3 + Vite)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Tech Stack
+- Vue 3
+- Vite
+- TypeScript (optional)
+- Vitest (planned)
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+---
+
+## Setup
+
+```bash
+npm install
+npm run dev
+```
+
+http://localhost:5173
+
+---
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+Output:
+dist/
+
+---
+
+## Env
+
+Use Vite env variables only (VITE_)
+
+Files:
+- .env.development
+- .env.production
+- .env.example (committed)
+
+Example:
+
+VITE_API_BASE_URL=http://localhost:8000
+VITE_SITE_URL=http://localhost:5173
+
+---
+
+## Project Structure
+
+```bash
+frontend/
+├── node_modules
+├── dist
+├── public/
+├── src/
+│   ├── components/
+│   ├── views/
+│   ├── composables/
+│   ├── stores/
+│   ├── utils/
+│   ├── router/
+│   ├── assets/
+│   └── main.ts
+│
+├── e2e
+├── tests/
+│   ├── components/
+│   ├── intergration/
+│   └── unit/
+│
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+├── package.json
+│
+├── /.git (hidden)
+├── .gitignore
+│
+├── .github/workflows/
+│   ├── cd.yml
+│   └── ci.yml
+│
+├── .env.example
+├── .env.development
+├── .env.production
+│
+├── .dockerignore
+├── Dockerfile.dev
+├── Dockerfile.prod
+│
+└── README.md
+```
+
+---
+
+## Scripts
+
+npm run dev
+npm run build
+npm run preview
+npm run test
+
+---
+
+## Docker
+
+Not implemented yet
