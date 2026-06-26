@@ -5,6 +5,8 @@ import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
 
 const count = ref(0)
+
+console.log(import.meta.env.VITE_APP_ENV)
 </script>
 
 <template>
